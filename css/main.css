@@ -1,0 +1,39 @@
+.container{
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+.clock {
+    margin: 0;
+    font-size: 16vw;
+
+}
+body, html, .container{
+    height: 100%;
+}
+body{
+    text-align: center;
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    color: white;
+}
+.settings{
+    text-align: left;
+    margin-left: 20px;
+    font-size: 24px;
+}
+/* setting checkbox */
+.showDate{
+    margin-left: 10px;
+}
+.showDate[type=checkbox]{
+    transform: scale(2.0);
+}
+
+.date{
+    font-size: 6vw;
+}
+.fonts{
+    transform: scale(1.12);
+}

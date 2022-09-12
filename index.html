@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Clock</title>
+</head>
+<body>
+    <div class="container">
+        <div class="clock">
+            <span id="h">00</span> :
+            <span id="m">00</span> :
+            <span id="s">00</span>
+            <p class="date" id="date">1/1</p>
+        </div>
+    </div>
+    <div class="settings">
+        <h1>設定</h1>
+        <p>設定はリロードするとリセットされます。</p>
+        <span>日付を表示する</span>
+        <input type="checkbox" id="showDate" class="showDate" onclick="showDate()">
+
+        <br>
+
+        <span>背景色</span>
+        <input type="color" id="bgColor">
+        <input type="button" value="背景色を変更" onclick="changeBgColor()">
+
+        <br>
+
+        <span>文字色</span>
+        <input type="color" id="textColor">
+        <input type="button" value="文字色を変更" onclick="changeTextColor()">
+
+        <br>
+
+        <span>フォント</span>
+        <select id="fonts" class="fonts">
+            <option value="Helvetica">Helvetica</option>
+        </select>
+
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/setting.js"></script>
+</body>
+</html>
